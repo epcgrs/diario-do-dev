@@ -1,0 +1,14 @@
+.button-site-primary {
+    padding: 6px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: $blue;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 15px;
+    &:hover {
+        background-color: #444;
+        text-decoration: none;
+        color: #fff;
+    }
+}
