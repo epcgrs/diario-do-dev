@@ -1,12 +1,13 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import Vue          from 'vue';
+import VueRouter    from 'vue-router';
 
-import Home from './pages/Home.vue';
-import About from './pages/About.vue';
-import Login from './pages/Login.vue';
-import Register from './pages/Cadastro.vue';
-import Profile from './pages/Profile.vue';
-import Diarios from './pages/Diarios.vue';
+import Home         from './pages/Home.vue';
+import About        from './pages/About.vue';
+import Login        from './pages/Login.vue';
+import Register     from './pages/Cadastro.vue';
+import Profile      from './pages/Profile.vue';
+import Diarios      from './pages/Diarios.vue';
+import ContentForm  from './pages/Contents/Form';
 
 Vue.use(VueRouter);
 
@@ -43,6 +44,11 @@ const router = new VueRouter({
             path: '/diarios',
             name: 'diarios',
             component: Diarios
+        },
+        {
+            path: '/create-content',
+            name: 'createContent',
+            component: ContentForm
         }
     ]
 });
